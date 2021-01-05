@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto JS || jQuery</title>
+
+    <!-- Estilos en CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link id="themes" rel="stylesheet" href="./css/green.css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="./js/jQuery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery-ui.min.css" />
+    <link rel="stylesheet" src="./lib/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" src="./lib/jquery-ui.theme.min.css" />
+    <script type="text/javascript" src="./lib/jquery-ui.min.js"></script>
+
+    <!-- jquery Validation -->
+    <script src="./lib/jquery-form-validator.min.js"></script>
+
+    <!-- My script -->
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div id="selector-theme">
+      <div id="to-green"></div>
+      <div id="to-red"></div>
+      <div id="to-blue"></div>
+    </div>
+    <main id="global">
+      <header>
+        <div id="logo">
+          <h1>Proyecto JS</h1>
+        </div>
+
+        <div class="clearFix"></div>
+
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clock.html">Reloj</a></li>
+            <li><a href="about.html">Sobre mi</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Post publicados -->
+      <section id="content">
+        <div id="box">
+          <!-- Cargar formulario -->
+          <h2>Contacto</h2>
+          <form action="#" id="form-contact" >
+            <label for="name">
+              <span>Nombre:</span>
+              <input type="text" name="name" data-validation="alphanumeric">
+            </label>
+            <label for="lastname">
+              <span>Apellido</span>
+              <input type="text" name="lastname" data-validation="alphanumeric">
+            </label>
+            <label for="email">
+              <span>Correo electronico</span>
+              <input type="email" name="email" data-validation="email">
+            </label>
+            <label for="sex">
+              <span>Sexo</span>
+              <select name="sex" id="sex" data-validation="required">
+                <option value="man">Masculino</option>
+                <option value="woman">Femenino</option>
+              </select>
+            </label>
+            <label for="birthday">
+              <span>Fecha de nacimiento</span>
+              <input type="text" name="birthday" data-validation="date" data-validation-format="dd/mm/yyyy">
+            </label>
+            <label for="age">
+              <span>Edad</span>
+              <input type="number" name="age" data-validation="number">
+            </label>
+            <input type="submit" name="send" value="Enviar!">
+          </form>
+          </div>
+        </div>
+        <aside id="sidebar">
+          <div id="about">
+            <h4><span>¿Quein soy?</span></h4>
+            <figure>
+              <img src="./img/caracol.jpg" alt="Imagen de quien soy" />
+            </figure>
+            <p class="about-data">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+              similique asperiores magni necessitatibus facilis voluptas!
+              Recusandae consectetur vel ad repudiandae mollitia, perferendis at
+              itaque voluptas, excepturi numquam assumenda? Voluptas, nam.
+            </p>
+          </div>
+          <div id="login">
+            <h4>Identificate</h4>
+            <form>
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="form_name" />
+
+              <label for="email">Correo</label>
+              <input type="email" name="email" id="form_email" />
+
+              <label for="password">Password</label>
+              <input type="password" name="password" id="form_password" />
+
+              <input type="submit" value="Entrar" />
+            </form>
+          </div>
+        </aside>
+        <div class="clearFix"></div>
+      </section>
+    </main>
+    <footer>
+      Primera version, derechos reservados &copy;
+      <a href="#" class="upTo">Ir arriba</a>
+    </footer>
+  </body>
+</html>

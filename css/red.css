@@ -1,0 +1,37 @@
+:root {
+  --red-lyon: #ca3413;
+}
+
+body {
+  background-image: url("../img/rojo.jpg");
+  background-attachment: fixed;
+}
+
+#logo {
+  background: var(--red-lyon);
+}
+
+#menu ul li:hover {
+  background: var(--red-lyon);
+}
+
+.button-more {
+  background: var(--red-lyon);
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid var(--red-lyon) !important;
+  background: var(--red-lyon) !important;
+}
+
+#header-clock {
+  background-color: var(--red-lyon);
+}
+
+#clock {
+  background-color: var(--red-lyon);
+}

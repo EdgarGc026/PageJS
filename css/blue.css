@@ -1,0 +1,38 @@
+:root {
+  --blue-skyle: #1f87c4;
+}
+
+body {
+  background-image: url("../img/cielo.jpg");
+  background-attachment: fixed;
+}
+
+#logo {
+  background: var(--blue-skyle);
+}
+
+#menu ul li:hover {
+  background: var(--blue-skyle);
+}
+
+.button-more {
+  background: var(--blue-skyle);
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid var(--blue-skyle) !important;
+  background: var(--blue-skyle) !important;
+}
+
+#header-clock {
+  background-color: var(--blue-skyle);
+}
+
+#clock {
+  background-color: var(--blue-skyle);
+}
